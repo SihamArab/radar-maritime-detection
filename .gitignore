@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Données et modèles
+data/
+datasets/
+*.pt
+*.pth
+*.onnx
+*.h5
+runs/
+weights/
+*.mat
