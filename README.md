@@ -1,10 +1,8 @@
 # radar-maritime-detection
-
-Radar target detection on Range-Doppler maps and waveform classification, on the RadDet40K dataset.
-A classical 2D CA-CFAR detector is compared with YOLOv8n and YOLOv10n, and waveform classification
-is compared between ResNet18/34/50 and a dedicated CNN.
-
 Master's end-of-studies project, ENSTA Bretagne, 2026.
+
+Subject: Radar target detection on Range-Doppler maps and waveform classification, on the RadDet40K dataset.
+A classical 2D CA-CFAR detector is compared with YOLOv8n and YOLOv10n, and waveform classification is compared between ResNet18/34/50 and a dedicated CNN.
 
 ## Problem
 
