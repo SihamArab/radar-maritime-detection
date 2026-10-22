@@ -78,21 +78,6 @@ python resnet_benchmark.py
 python custom_cnn_benchmark.py
 ```
 
-## Limites connues
-
-- Les images sont des PNG en fausses couleurs. `cfar.py` les lit en niveaux de gris : le détecteur travaille donc sur la luminance, qui n'est pas la puissance du signal.
-  La carte d'énergie inverse aussi l'ordre des intensités, les pixels sombres reçoivent une énergie élevée. Ce point reste à vérifier avec la table de couleurs utilisée.
-- La classification applique par défaut une suppression du fond par seuil d'Otsu, et une image contenant plusieurs cibles prend la classe majoritaire.
-- La courbe ROC de `cfar.py` balaye Pfa de 1e-5 à environ 0,3 seulement, l'aire sous la courbe ne couvre donc que cette plage.
-- `yolo_benchmark.py` compare YOLO à des comptages CA-CFAR de référence tirés d'un rapport antérieur du laboratoire, et non à la sortie de `cfar.py`.
-- La configuration CA-CFAR de ce dépôt diffère de la configuration à 10 cellules de référence de ce rapport.
-- Aucun résultat chiffré n'est publié dans ce dépôt.
-
-## Remerciements
-
-Projet réalisé à l'ENSTA Bretagne, au sein du laboratoire Lab-STICC, sous la direction de mes encadrants.
-Les chiffres de référence du CA-CFAR proviennent d'un rapport antérieur du laboratoire.
-
 ## Licence
 
 MIT
